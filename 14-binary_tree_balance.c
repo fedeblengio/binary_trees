@@ -1,6 +1,6 @@
 #include "binary_trees.h"
 /**
- *nary_tree_height - functiont that measures height of the tree
+ *binary_tree_height - functiont that measures height of the tree
  *@tree: treebinary
  *Return: the height
  */
@@ -36,8 +36,9 @@ int binary_tree_is_leaf(const binary_tree_t *node)
 		return (0);
 }
 /**
- *
- *
+ *binary_tree_balance - function that calculate balance
+ *@tree: arbol
+ *Return: balance of the tree
  */
 int binary_tree_balance(const binary_tree_t *tree)
 {
@@ -45,7 +46,7 @@ int binary_tree_balance(const binary_tree_t *tree)
 	int left = 0;
 
 	if (tree == NULL)
-		return 0;
+		(return 0);
 	if (tree->right)
 		right = binary_tree_height(tree->right) + 1;
 	if (tree->left)
